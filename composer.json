@@ -1,23 +1,22 @@
 {
-    "name": "soarecostin/file-vault",
+    "name": "qpoc/file-vault",
     "description": "",
     "keywords": [
         "laravel", "encrypt", "decrypt", "encryption", "decryption",
         "cbc", "php", "file", "file-vault"
     ],
-    "homepage": "https://github.com/soarecostin/file-vault",
+    "homepage": "https://github.com/qpoc/file-vault",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
-            "name": "Costin Soare",
-            "email": "soarecostin@gmail.com",
+            "name": "Qpoc",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.2|^8.0",
-        "illuminate/support": "5.8.* || 6.*.* || ^7.0 || ^8.0"
+        "php": "^7.2|^8.1",
+        "illuminate/support": "^8.0 || ^9.0 || 10.*"
     },
     "require-dev": {
         "orchestra/testbench": "^5.0|^6.0",
@@ -25,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "SoareCostin\\FileVault\\": "src"
+            "Qpoc\\FileVault\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "SoareCostin\\FileVault\\Tests\\": "tests"
+            "Qpoc\\FileVault\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,10 +43,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SoareCostin\\FileVault\\FileVaultServiceProvider"
+                "Qpoc\\FileVault\\FileVaultServiceProvider"
             ],
             "aliases": {
-                "FileVault": "SoareCostin\\FileVault\\Facades\\FileVault"
+                "FileVault": "Qpoc\\FileVault\\Facades\\FileVault"
             }
         }
     }
