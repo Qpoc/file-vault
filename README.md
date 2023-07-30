@@ -1,16 +1,16 @@
 # File encryption / decryption in Laravel
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/soarecostin/file-vault.svg?style=flat-square)](https://packagist.org/packages/soarecostin/file-vault)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/qpoc/file-vault.svg?style=flat-square)](https://packagist.org/packages/qpoc/file-vault)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/soarecostin/file-vault/master.svg?style=flat-square)](https://travis-ci.org/soarecostin/file-vault)
-[![Quality Score](https://img.shields.io/scrutinizer/g/soarecostin/file-vault.svg?style=flat-square)](https://scrutinizer-ci.com/g/soarecostin/file-vault)
+[![Build Status](https://img.shields.io/travis/qpoc/file-vault/master.svg?style=flat-square)](https://travis-ci.org/qpoc/file-vault)
+[![Quality Score](https://img.shields.io/scrutinizer/g/qpoc/file-vault.svg?style=flat-square)](https://scrutinizer-ci.com/g/qpoc/file-vault)
 [![StyleCI](https://styleci.io/repos/221933072/shield)](https://styleci.io/repos/221933072)
-[![Total Downloads](https://img.shields.io/packagist/dt/soarecostin/file-vault.svg?style=flat-square)](https://packagist.org/packages/soarecostin/file-vault)
+[![Total Downloads](https://img.shields.io/packagist/dt/qpoc/file-vault.svg?style=flat-square)](https://packagist.org/packages/qpoc/file-vault)
 
 With this package, you can encrypt and decrypt files of any size in your Laravel project. This package uses streams and [CBC encryption](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_Block_Chaining_(CBC)), encrypting / decrypting a segment of data at a time.
 
 ## Fork
-This package is forked from soarecostin/file-vault to add Laravel 10 support.
+This package is forked from qpoc/file-vault to add Laravel 10 support.
 
 ## Installation and usage
 
@@ -19,7 +19,7 @@ This package requires PHP 7.2 and Laravel 5.8 or higher.
 You can install the package via composer:
 
 ```bash
-composer require soarecostin/file-vault
+composer require qpoc/file-vault
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ composer require soarecostin/file-vault
 ### Tutorials
 For a detailed description of how to encrypt files in Laravel using this package, please see the following articles:
 - [Part 1: How to encrypt large files in Laravel](https://medium.com/swlh/how-to-encrypt-large-files-in-laravel-293460836ded?source=friends_link&sk=976ab6e5d1cfb52e10c801fe0cb04fca)
-- [Part 2: How to encrypt & upload large files to Amazon S3 in Laravel](https://medium.com/@soarecostin/how-to-encrypt-upload-large-files-to-amazon-s3-in-laravel-af88324a9aa?sk=a9a358a3892e898a60448d5314fb3dc0)
+- [Part 2: How to encrypt & upload large files to Amazon S3 in Laravel](https://medium.com/@qpoc/how-to-encrypt-upload-large-files-to-amazon-s3-in-laravel-af88324a9aa?sk=a9a358a3892e898a60448d5314fb3dc0)
 
 ### Description
 This package will automatically register a facade called `FileVault`. The `FileVault` facade is using the Laravel `Storage` and will allow you to specify a `disk`, just as you would normally do when working with Laravel Storage. All file names/paths that you will have to pass into the package encrypt/decrypt functions are relative to the disk root folder. By default, the `local` disk is used, but you can either specify a different disk each time you call one of `FileVault` methods, or you can set the default disk to something else, by publishing this package's config file.
@@ -35,7 +35,7 @@ This package will automatically register a facade called `FileVault`. The `FileV
 If you want to change the default `disk` or change the `key`/`cipher` used for encryption, you can publish the config file:
 
 ```
-php artisan vendor:publish --provider="SoareCostin\FileVault\FileVaultServiceProvider"
+php artisan vendor:publish --provider="Qpoc\FileVault\FileVaultServiceProvider"
 ```
 
 This is the contents of the published file:
@@ -192,11 +192,11 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security related issues, please email soarecostin@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please email qpoc@gmail.com instead of using the issue tracker.
 
 ## Credits
 
-- [Costin Soare](https://github.com/soarecostin)
+- [Costin Soare](https://github.com/qpoc)
 - [All Contributors](../../contributors)
 
 ## License

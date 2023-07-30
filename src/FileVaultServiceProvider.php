@@ -1,6 +1,6 @@
 <?php
 
-namespace SoareCostin\FileVault;
+namespace Qpoc\FileVault;
 
 use Illuminate\Support\ServiceProvider;
 
