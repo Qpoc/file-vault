@@ -9,6 +9,8 @@
 
 With this package, you can encrypt and decrypt files of any size in your Laravel project. This package uses streams and [CBC encryption](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_Block_Chaining_(CBC)), encrypting / decrypting a segment of data at a time.
 
+## Fork
+This package is forked from soarecostin/file-vault to add Laravel 10 support.
 
 ## Installation and usage
 
